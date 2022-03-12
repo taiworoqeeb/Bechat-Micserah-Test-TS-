@@ -13,10 +13,10 @@ Then create a .env file that will contain your private keys for security with ea
 4. TOKEN: Secret Token for JWT can be any Random letters/word
 5. SECRET: Secret letters for express-session
 
-Then start app with 
+Then start app with (incase this failed to work due to no build present use the command below) 
 ```console 
-npm start //incase this failed to work due to no build present use the command below
-``` 
+npm start 
+```
 or
 
 ```console 
