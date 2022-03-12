@@ -24,6 +24,7 @@ npm run dev
 ``` 
 for developer mode.
 
-The JavaScript version of this code can be found at:
+The JavaScript version of this code can be found at
+
 [JavaScript-Version](https://github.com/taiworoqeeb/BetChat-Micserah-Test-JS- "BetChat-Micserah-Test-JS repo")
 
