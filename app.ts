@@ -6,9 +6,12 @@ import Auth from './middleware/passport';
 import * as redis from 'redis';
 const session = require('express-session');
 const RedisStore = require('connect-redis')(session);
+import morgan from "morgan"
 dotenv.config();
 const app = express();
 import router from './routes/routes';
+
+
 
 
 const redisURL = process.env.REDIS_URL as string;
@@ -41,7 +44,7 @@ app.use(
   })
 );
 
-
+app.use(morgan("tiny"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false}));
 app.use(passport.initialize());
