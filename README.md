@@ -15,7 +15,7 @@ Then create a .env file that will contain your private keys for security with ea
 
 Then start app with 
 ```console 
-npm start 
+npm start //incase this failed to work due to no build present use the command below
 ``` 
 or
 
@@ -23,3 +23,7 @@ or
 npm run dev 
 ``` 
 for developer mode.
+
+The JavaScript version of this code can be found at:
+[JavaScript-Version](https://github.com/taiworoqeeb/BetChat-Micserah-Test-JS- "BetChat-Micserah-Test-JS repo")
+
