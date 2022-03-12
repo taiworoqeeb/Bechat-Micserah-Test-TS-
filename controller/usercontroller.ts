@@ -47,7 +47,7 @@ const RegisterUser = async (req: Body<{fullname: string, username: string, email
 
 const LoginUser = async (req:  Body<{username: string, password: string}>, res: Response) => {
     try{
-        let user = await UserModel.findOne({username: req.body.username});
+        let user = await UserModel.findOne({username: req.body.username}).populate("password");
         if(!user){
             return res.status(404).json({
                 message: 'user does not exist',
